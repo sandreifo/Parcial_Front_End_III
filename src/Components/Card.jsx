@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Card = (props) => {
+const Card = ({ preferencias }) => {
   return (
-    <div>
-        <h1>{props.title}</h1>
-        <div>{props.text}</div>
+    <div className="card">
+      <h3>¡Gracias por compartir tus preferencias!</h3>
+      <h4>Fruta favorita: {preferencias.frutaFavorita}</h4>
+      <h4>Color favorito: {preferencias.colorFavorito}</h4>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
